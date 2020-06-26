@@ -1,0 +1,4 @@
+prefix = "kahushareurl"
+backend = "env"
+confdir = "/etc/confd"
+KeepStageFile = true
