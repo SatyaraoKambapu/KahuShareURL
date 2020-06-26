@@ -8,18 +8,18 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
 @Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
-	//Create User - in28Minutes/dummy
+	//Create User - newdealer/password
 	@Autowired
     public void configureGlobalSecurity(AuthenticationManagerBuilder auth)
             throws Exception {
-        auth.inMemoryAuthentication().withUser("kahulocation").password("password")
+        auth.inMemoryAuthentication().withUser("newdealer").password("password")
                 .roles("USER", "ADMIN");
     }
 	
 	@Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().antMatchers("/login").permitAll()
-                .antMatchers("/", "/*todo*/**").access("hasRole('USER')").and()
+        http.authorizeRequests().antMatchers("/track").permitAll()
+                .antMatchers("/", "/*track*/**").access("hasRole('USER')").and()
                 .formLogin();
     }
 }
