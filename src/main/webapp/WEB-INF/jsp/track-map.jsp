@@ -1,11 +1,12 @@
 <%@ include file="common/header.jspf" %>
 <%@ include file="common/navigation.jspf" %>
-	
+	<div>
+
+		<img src="https://dealer-stage.kahuapp.com/assets//kahu/logo.png" width="314px">
+	</div>
 	<div class="container">
 		<table class="table table-striped">
-			<caption>Hi,  You can track your friends here.</caption>
 			<div id="map"></div>
-
 			<script>
 				mapboxgl.accessToken = 'pk.eyJ1IjoibWFwLWRldiIsImEiOiJjaXBmczZsY3YwMDFvc3htajJvMHptcnd2In0.XexHqpehDIOH2S28kXCCww';
 
