@@ -2,15 +2,13 @@ package com.spireon.hackthon.kahuweb.model;
 
 import java.util.Date;
 
-import javax.validation.constraints.Size;
-
 public class TrackVehicle {
     private int id;
     private String user;
     private String assetVin;
     private String deviceId;
     private String deviceSerialNumber;
-    private LocationDTO locationDTO;
+    private LocationDto locationDTO;
     private Date eventDate;
 
     public TrackVehicle() {
@@ -57,11 +55,11 @@ public class TrackVehicle {
         this.deviceSerialNumber = deviceSerialNumber;
     }
 
-    public LocationDTO getLocationDTO() {
+    public LocationDto getLocationDTO() {
         return locationDTO;
     }
 
-    public void setLocationDTO(LocationDTO locationDTO) {
+    public void setLocationDTO(LocationDto locationDTO) {
         this.locationDTO = locationDTO;
     }
 
